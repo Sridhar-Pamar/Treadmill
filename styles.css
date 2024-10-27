@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.treadmill {
+    width: 600px;
+    height: 100px;
+    background-color: #ccc;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #888;
+    border-radius: 5px;
+}
+
+.runner {
+    width: 50px;
+    height: 50px;
+    background-color: #4CAF50;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    animation: running 0.5s linear infinite; /* Running animation */
+}
+
+@keyframes running {
+    0% {
+        background-color: #4CAF50; /* Initial color */
+        transform: translateY(0);
+    }
+    50% {
+        background-color: #388E3C; /* Darker color in middle of animation */
+        transform: translateY(-10px); /* Upward motion */
+    }
+    100% {
+        background-color: #4CAF50; /* Return to initial color */
+        transform: translateY(0); /* Back to original position */
+    }
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    width: 80px;
+    margin-right: 5px;
+}

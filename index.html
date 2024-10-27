@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running Treadmill Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Treadmill Running Simulation</h1>
+        <div class="treadmill">
+            <div class="runner" id="runner"></div>
+        </div>
+        <div class="controls">
+            <input type="number" id="speedInput" placeholder="Enter Speed">
+            <select id="speedUnit">
+                <option value="km/hr">km/hr</option>
+                <option value="m/s">m/s</option>
+                <option value="km/s">km/s</option>
+                <option value="m/hr">m/hr</option>
+            </select>
+            <button onclick="startRunning()">Start</button>
+            <button onclick="stopRunning()">Stop</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
